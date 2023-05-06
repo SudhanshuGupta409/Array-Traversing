@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array Traversing</title>
+
+    <script>
+      const data = [9, 45, 2, 8, 4, 23, 7, 78, 0, 11, 41, 77];
+
+      for (let i = 0; i < data.length; i++) {
+        document.write(data[i] + ", ");
+      }
+
+      function getElement() {
+        let el = document.getElementById("element").value;
+        el < data.length && typeof parseInt(el) === Number
+          ? alert(data[el])
+          : alert(
+              `You have only ${data.length} elemment, so please enter less than ${data.length}`
+            );
+      }
+
+      //   const data = [9, 45, 21, 8, 40];
+      let newEl = 70;
+      let position = 2;
+    </script>
+  </head>
+  <body>
+    <input type="text" name="" id="element" />
+    <button onclick="getElement()">Get Element</button>
+  </body>
+</html>
